@@ -11,7 +11,7 @@ export default function Home() {
       </section>
       <section className="flex justify-center items-center lg:min-h-screen  w-full lg:w-1/2 bg-chrome border-l border-slate-800">
         <div className='relative hidden lg:block md:w-1/3 lg:w-1/2 lg:h-1/3 xl:h-1/2'>
-          <Image src='/assets/brain3.png' placeholder='empty' alt='brain' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+          <Image src='/assets/brain3.png' placeholder='empty' priority={false} alt='brain' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
         </div>
       </section>
     </main>
