@@ -11,13 +11,12 @@ type Props = {
 const Slug = async ({ params: { slug } }: Props) => {
     const data = await getProduct(slug);
     const product: ProductType = data ? data[0] : null
-        console.log(data)
     return (
         <main>
             <section className="bg-white min-h-screen">
                 <article className="container  mx-auto  ">
                     <header className="flex justify-center bg-secondary w-full border border-slate-950 border-y-0">
-                        <Image alt={slug} src={`/assets/products/${slug.split(' ').join('_')}.png`} width={1000} height={1000} />
+                        <Image alt={slug} src={`/assets/products/${slug}.png`} width={1000} height={1000} />
                     </header>
                     <footer className="flex flex-col md:flex-row">
                         <section className="md:w-3/4 w-full border border-slate-950 border-b-0 md:border-b">
@@ -39,6 +38,7 @@ const Slug = async ({ params: { slug } }: Props) => {
 
 async function getProduct(slug: string) {
     let { data } = await supabase.from('products').select('*').eq('slug', slug)
+    console.log(slug)
     return data
 }
 

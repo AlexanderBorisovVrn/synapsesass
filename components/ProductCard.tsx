@@ -9,7 +9,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
         <article className='flex flex-col  w-full  bg-chrome rounded-md shadow-md hover:shadow-2xl'>
             <Link href={`/products/${transformSlug}`}>
                 <header className=' bg-secondary rounded-t-md p-5 relative'>
-                    <h1 className='flex w-full absolute text-white justify-center left-0 px-2 text-3xl  2xl:text-5xl '>{product.name}</h1>
+                    <h1 className='flex w-full absolute text-white justify-center left-0 px-2 text-3xl  2xl:text-5xl '>{product?.name}</h1>
                     <img src={`/assets/products/${transformSlug}.png`} alt={slug} className='w-1/2 h-1/3 mx-auto mt-8' />
                 </header>
             </Link>
