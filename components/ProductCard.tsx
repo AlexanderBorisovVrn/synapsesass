@@ -19,7 +19,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
                                    
                 </Link>
                 <Link href={`/`} className='flex justify-center text-white hover:opacity-95 grow py-3 lg:py-5 px-8 bg-blue align-middle'>
-                    {product.category}
+                    {product?.category.toUpperCase()}
                 </Link>
             </footer>
 
