@@ -1,10 +1,10 @@
 import Navbar from '@/components/Navbar'
 import './globals.css'
-import { Inter,Dancing_Script,Permanent_Marker} from 'next/font/google'
+import { Inter, Dancing_Script, Permanent_Marker } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'],variable: '--font-inter' })
-const dancing = Dancing_Script({subsets:['latin'],variable: '--font-dancing'})
-const permanent = Permanent_Marker({subsets:['latin'],weight:'400',variable:'--font-permanent'})
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const dancing = Dancing_Script({ subsets: ['latin'], variable: '--font-dancing' })
+const permanent = Permanent_Marker({ subsets: ['latin'], weight: '400', variable: '--font-permanent' });
 
 export const metadata = {
   title: 'SYNAPSESASS',
@@ -19,8 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${permanent.variable}`}>
-        <Navbar/>
-        {children}</body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

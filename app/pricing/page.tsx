@@ -1,4 +1,4 @@
-import PricingPlan from "@/components/PricingPlan"
+import Plans from "@/components/Plans"
 
 
 
@@ -6,7 +6,7 @@ const Pricing = () => {
   return (
     <main className="flex bg-black min-h-screen ">
       <section className="flex md:w-1/2 w-full items-center justify-center bg-secondary border min-h-screen p-5">
-        <PricingPlan />
+        <Plans />
       </section>
       <section className="md:w-1/2 bg-chrome hidden md:flex md:flex-col p-10 justify-center items-center">
         <div>
