@@ -1,6 +1,5 @@
 import ProductCard from '@/components/ProductCard';
 import { supabase } from '../../supabase/supabese'
-import { log } from 'console';
 
 export type ProductType = {
   id: number,
@@ -18,7 +17,6 @@ const Products = async () => {
   const products = data?.map((product: ProductType) => (<li key={product.id}>
     <ProductCard product={product} />
   </li>))
-  log(data)
   if (!data?.length) {
     return (
       <main className='w-full bg-white h-screen flex justify-center items-center text-2xl lg:text-9xl'>Products not found</main>

@@ -6,7 +6,8 @@ const Navbar = () => {
             <Link className="font-permanent text-slate-950 text-2xl sm:text-5xl lg:text-6xl pl-5 sm:pl-10  md:pl-20" href='/'>SYNAPSESASS</Link>
 
             <div className="flex h-full sm:text-xl md:text-3xl">
-                <Link href='/login'><button className="flex h-full items-center hover:opacity-95  border-4 border-y-0 border-black px-5 md:px-10 text-black ">Login</button></Link>
+                <Link href='/signup' ><button className="flex h-full items-center hover:opacity-90  px-5 md:px-10 text-primary  ">SignUp</button></Link>
+                <Link href='/signin'><button className="flex h-full items-center hover:opacity-95  border-4 border-y-0 border-black px-5 md:px-10 text-black ">Login</button></Link>
                 <Link href='/pricing'><button className="flex h-full items-center hover:opacity-95  bg-black  text-white px-5 md:px-10">Pricing</button></Link>
             </div>
         </nav>
